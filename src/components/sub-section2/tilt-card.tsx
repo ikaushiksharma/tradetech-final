@@ -30,29 +30,25 @@ const TiltCard = () => {
         src={item1}
         style={{ transform: 'translateZ(40px)' }}
         alt="full text"
-        width={135}
-        className="isolate shadow-lg absolute top-48 left-14"
+        className="isolate w-[35%] shadow-lg absolute top-[26%] left-[14%]"
       />
       <Image
         src={item2}
         style={{ transform: 'translateZ(40px)' }}
         alt="full text"
-        width={135}
-        className="isolate shadow-lg absolute top-72 right-14"
+        className="isolate w-[35%] shadow-lg absolute top-[40%] right-[14%]"
       />
       <Image
         src={item3}
         style={{ transform: 'translateZ(40px)' }}
         alt="full text"
-        width={135}
-        className="isolate shadow-lg absolute bottom-44 left-14"
+        className="isolate w-[35%] shadow-lg absolute bottom-[24%] left-[14%]"
       />
       <Image
         src={item4}
         style={{ transform: 'translateZ(40px)' }}
         alt="full text"
-        width={135}
-        className="isolate shadow-lg absolute bottom-44 right-14"
+        className="isolate w-[35%] shadow-lg absolute bottom-[24%] right-[14%]"
       />
     </Tilt>
   )

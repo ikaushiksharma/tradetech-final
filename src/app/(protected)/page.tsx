@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <HeroSection />
       <SubSection1 />
-      <div className="h-screen"></div>
+      {/* <div className="h-screen"></div> */}
       <SubSection2 />
       <SubSection3 />
     </>
