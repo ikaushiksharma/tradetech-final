@@ -4,8 +4,8 @@ import SocialButton from './social-button'
 
 const Navbar = () => {
   return (
-    <div className="my-6 fixed flex max-w-screen-xl z-50 backdrop-blur-lg h-12 w-full justify-between items-center">
-      <div className="flex justify-between items-center h-full w-full">
+    <div className="my-6  fixed flex max-w-screen-2xl z-50 backdrop-blur-lg h-12 w-full justify-center items-center">
+      <div className="flex justify-between max-w-screen-xl items-center h-full w-full">
         <div className="relative flex-[1] h-4/5">
           <Image
             alt="logo"

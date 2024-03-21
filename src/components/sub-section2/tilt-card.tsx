@@ -24,35 +24,35 @@ const TiltCard = () => {
     <Tilt
       options={defaultOptions}
       style={{ transformStyle: 'preserve-3d' }}
-      className="relative h-4/5 w-4/5 transform bg-center bg-contain bg-no-repeat bg-[url('./assets/mobile.svg')]"
+      className="relative h-[90%] aspect-[9/16] transform bg-center bg-contain bg-no-repeat bg-[url('./assets/mobile.svg')]"
     >
       <Image
         src={item1}
         style={{ transform: 'translateZ(40px)' }}
         alt="full text"
-        width={120}
-        className="isolate shadow-lg absolute top-40 left-32"
+        width={135}
+        className="isolate shadow-lg absolute top-48 left-14"
       />
       <Image
         src={item2}
         style={{ transform: 'translateZ(40px)' }}
         alt="full text"
-        width={120}
-        className="isolate shadow-lg absolute top-60 translate-y-2 right-32"
+        width={135}
+        className="isolate shadow-lg absolute top-72 right-14"
       />
       <Image
         src={item3}
         style={{ transform: 'translateZ(40px)' }}
         alt="full text"
-        width={120}
-        className="isolate shadow-lg absolute bottom-36 left-32"
+        width={135}
+        className="isolate shadow-lg absolute bottom-44 left-14"
       />
       <Image
         src={item4}
         style={{ transform: 'translateZ(40px)' }}
         alt="full text"
-        width={120}
-        className="isolate shadow-lg absolute bottom-36 right-32"
+        width={135}
+        className="isolate shadow-lg absolute bottom-44 right-14"
       />
     </Tilt>
   )
