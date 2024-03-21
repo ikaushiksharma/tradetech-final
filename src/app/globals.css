@@ -78,3 +78,12 @@
 div {
   /* border: 1px solid red; */
 }
+
+.tiltCard {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.titlCard > * {
+  transform: translateZ(20px);
+}

@@ -1,11 +1,11 @@
 'use client'
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
+import React, { useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 type Props = {}
 
 const SubSection1 = (props: Props) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -24,7 +24,7 @@ const SubSection1 = (props: Props) => {
   }, [])
 
   return (
-    <div className="w-full relative container border-green-500 flex items-center justify-center h-screen">
+    <div className="w-full relative px-16 container border-green-500 flex items-center justify-center h-screen">
       <div className="flex w-32 items-center justify-center  absolute bottom-1/2 -translate-y-[80%] left-1/2 transform -translate-x-1/2 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin1.mp4" type="video/mp4" />
@@ -51,7 +51,9 @@ const SubSection1 = (props: Props) => {
         </video>
       </div>
       <h1 className="text-xl max-w-xl text-center text-gray-500 hidden text1">
-        <div className="text-4xl text-black">Trained by the best in the business</div>
+        <div className="text-4xl text-black">
+          Trained by the best in the business
+        </div>
         Our AI has been trained by the best sales coaches in the world. Our
         sales coaches like Ted McGrath will take your material and train your AI
         to become the perfect addition to your team.

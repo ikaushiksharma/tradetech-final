@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${myFont.className} max-w-screen-2xl px-16 w-full min-h-screen mx-auto`}
+        className={`${myFont.className} max-w-screen-2xl w-full min-h-screen mx-auto`}
       >
         <Navbar />
         {children}

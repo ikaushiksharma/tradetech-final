@@ -5,7 +5,7 @@ type Props = {}
 
 const HeroSection = (props: Props) => {
   return (
-    <div className="h-screen relative mx-auto flex flex-col pt-40 items-center ">
+    <div className="h-screen px-16 relative mx-auto flex flex-col pt-40 items-center ">
       <div>
         <h1 className="text-7xl mx-auto max-w-2xl uppercase text-center">
           Meet your AI Sales Copilot

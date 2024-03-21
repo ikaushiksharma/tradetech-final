@@ -2,6 +2,7 @@
 import HeroSection from '@/components/hero'
 import CTAButton from '@/components/hero/cta'
 import SubSection1 from '@/components/sub-section1'
+import SubSection2 from '@/components/sub-section2'
 import Image from 'next/image'
 import { useEffect } from 'react'
 
@@ -19,7 +20,7 @@ export default function Home() {
       <HeroSection />
       <SubSection1 />
       <div className="h-screen"></div>
-      <div className="h-screen"></div>
+      <SubSection2 />
     </>
   )
 }
