@@ -12,7 +12,7 @@ const CTAButton = ({ children, dark = false }: Props) => {
         'py-3 px-6 rounded-full',
         dark
           ? ' bg-purple-600 text-white'
-          : 'bg-purple text-black border border-gray-500',
+          : 'bg-white text-black border border-gray-500',
       ])}
     >
       {children}

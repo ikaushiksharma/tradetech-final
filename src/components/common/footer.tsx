@@ -1,68 +1,75 @@
-'use client'
+import React from 'react'
+import MiniHeading from './mini-heading'
+import CTAButton from '../hero/cta'
 import Image from 'next/image'
-import React, { useState } from 'react'
 import SocialButton from './social-button'
-import {
-  AnimatePresence,
-  useMotionValueEvent,
-  useScroll,
-  motion,
-} from 'framer-motion'
 
-const Navbar = () => {
-  const { scrollYProgress } = useScroll()
-
-  const [visible, setVisible] = useState(true)
-
-  useMotionValueEvent(scrollYProgress, 'change', (current) => {
-    // Check if current is not undefined and is a number
-    if (typeof current === 'number') {
-      let direction = current! - scrollYProgress.getPrevious()!
-
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(false)
-      } else {
-        if (direction < 0) {
-          setVisible(true)
-        } else {
-          setVisible(false)
-        }
-      }
-    }
-  })
-
+const Footer = () => {
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        initial={{
-          y: -100,
-        }}
-        animate={{
-          y: visible ? 0 : -100,
-        }}
-        transition={{
-          duration: 0.6,
-        }}
-        className="fixed flex max-w-screen-2xl bg-white z-50 backdrop-blur-lg h-18 w-full justify-center items-center"
-      >
-        <div className="flex justify-between max-w-screen-xl items-center h-full w-full">
-          <div className="relative flex-[1] h-10">
+    <div className="h-screen bg-black text-white w-full">
+      <div className="h-full mx-auto max-w-screen-xl">
+        <div className=" h-2/5 border-b flex justify-between items-center border-gray-600">
+          <div className="text-7xl">
+            <MiniHeading text="Ai Sales Copilot" />
+            TradeTech<span className="text-gray-400">.ai</span>
+          </div>
+          <div className="mr-10 text-xl text-white w-fit">
+            <CTAButton>Get Started Today</CTAButton>
+          </div>
+        </div>
+        <div className="h-[45%] flex justify-between items-center">
+          <div className="relative flex-[1] h-12">
             <Image
               alt="logo"
               fill
               src="/logo.webp"
               objectFit="contain"
               objectPosition="left top"
-              className="invert"
             />
           </div>
-          <ul className="flex py-6 flex-[1] flex-grow justify-evenly">
-            <li className="cursor-pointer hover:text-gray-500">Home</li>
-            <li className="cursor-pointer hover:text-gray-500">About</li>
-            <li className="cursor-pointer hover:text-gray-500">Blog</li>
-            <li className="cursor-pointer hover:text-gray-500">Contact</li>
-          </ul>
-          <div className="flex-[1] py-6 justify-end gap-4 items-center flex">
+          <div className="flex gap-12 w-1/2 h-full items-center justify-evenly">
+            <div className="flex flex-col items-center justify-center">
+              <MiniHeading text="Company" />
+              <ul className="flex flex-col gap-2 text-xl text-gray-300">
+                <li>About</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <MiniHeading text="Company" />
+              <ul className="flex flex-col gap-2 text-xl text-gray-300">
+                <li>About</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <MiniHeading text="Company" />
+              <ul className="flex flex-col gap-2 text-xl text-gray-300">
+                <li>About</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="h-[15%] flex justify-between items-center">
+          <div className="flex-1 px-4 flex uppercase text-sm items-center gap-10">
+            <p className="text-gray-500 cursor-pointer hover:text-purple-500 transition-all duration-700 before:absolute before:w-2 before:h-2 before:bg-purple-400 before:rounded-full relative before:hidden before:hover:block before:-left-3 before:top-1/2 before:-translate-y-1/2">
+              &copy; 2024 Tradetech pvt. ltd
+            </p>
+            <p className="text-gray-500 cursor-pointer hover:text-purple-500 transition-all duration-700 before:absolute before:w-2 before:h-2 before:bg-purple-400 before:rounded-full relative before:hidden before:hover:block before:-left-3 before:top-1/2 before:-translate-y-1/2">
+              Privacy policy
+            </p>
+            <p className="text-gray-500 cursor-pointer hover:text-purple-500 transition-all duration-700 before:absolute before:w-2 before:h-2 before:bg-purple-400 before:rounded-full relative before:hidden before:hover:block before:-left-3 before:top-1/2 before:-translate-y-1/2">
+              term of use
+            </p>
+          </div>
+          <div className="flex-1 py-6 justify-end gap-4 items-center flex">
             <SocialButton
               logo={
                 <svg
@@ -174,9 +181,9 @@ const Navbar = () => {
             />
           </div>
         </div>
-      </motion.div>
-    </AnimatePresence>
+      </div>
+    </div>
   )
 }
 
-export default Navbar
+export default Footer

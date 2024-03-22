@@ -26,7 +26,6 @@ export default function Home() {
       <SubSection3 />
       <FeaturesSection />
       <StepSection />
-      <div className="h-screen"></div>
     </>
   )
 }
