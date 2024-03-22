@@ -9,7 +9,7 @@ const SubSection2 = () => {
       <div className="h-full flex items-end rounded-3xl justify-center flex-1 border border-white/20">
         <TiltCard />
       </div>
-    <div className="h-full gap-12 flex flex-col p-16 flex-1">
+      <div className="h-full gap-12 flex flex-col p-16 flex-1">
         <div className="text-6xl">Our World Class Features</div>
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-3xl">

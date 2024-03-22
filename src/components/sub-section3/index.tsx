@@ -74,7 +74,7 @@ const SubSection3 = (props: Props) => {
       )
       .to('.overImg1', { rotate: 6, transformOrigin: 'bottom right' }, 'end2')
       .to('.overImg2', { rotate: 3, transformOrigin: 'bottom right' }, 'end2')
-      .to('.card_text', { x: 0,opacity:1 }, 'end2')
+      .to('.card_text', { x: 0, opacity: 1 }, 'end2')
 
     return () => {
       tl.kill()
@@ -111,7 +111,7 @@ const SubSection3 = (props: Props) => {
             alt="image4"
             className="absolute z-[-1] rotate-0 overImg2"
           />
-          <Image src={Card3} alt="image3" className="" />
+          <Image src={Card3} alt="image3" className="z-[1]" />
         </div>
         <div className="w-full max-w-7xl -z-[1] fixed top-1/2 -translate-y-[25%] rounded-3xl mx-12 container4 mb-36 flex items-center text-white h-[70vh] bg-purple-500">
           <div className="w-2/5 card_text opacity-0 h-full -translate-x-full flex gap-4 p-20 justify-center flex-col">

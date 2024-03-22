@@ -1,4 +1,5 @@
 'use client'
+import FeaturesSection from '@/components/feature-section'
 import HeroSection from '@/components/hero'
 import CTAButton from '@/components/hero/cta'
 import SubSection1 from '@/components/sub-section1'
@@ -22,7 +23,7 @@ export default function Home() {
       <SubSection1 />
       <SubSection2 />
       <SubSection3 />
-      <div className="h-screen"></div>
+      <FeaturesSection />
     </>
   )
 }
