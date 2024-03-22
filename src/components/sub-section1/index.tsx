@@ -1,12 +1,14 @@
 'use client'
 import React, { useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react'
+
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import MiniHeading from '../common/mini-heading'
 type Props = {}
 
 const SubSection1 = (props: Props) => {
-  useLayoutEffect(() => {
+  useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger)
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -31,7 +33,7 @@ const SubSection1 = (props: Props) => {
     return () => {
       tl.kill()
     }
-  }, [])
+  })
 
   return (
     <>
@@ -62,7 +64,7 @@ const SubSection1 = (props: Props) => {
             <source src="coin5.mp4" type="video/mp4" />
           </video>
         </div>
-        <h1 className="text-xl max-w-2xl text-center text-gray-500 hidden text1">
+        <h1 className="text-xl mx-auto max-w-2xl text-center text-gray-500 hidden text1">
           <MiniHeading text="Best In Business" />
           <div className="text-5xl text-black">
             Trained by the best in the business
@@ -85,7 +87,7 @@ const SubSection1 = (props: Props) => {
           </p>
         </h1>
       </div>
-      <div className="h-screen"></div>
+      {/* <div className="h-screen"></div> */}
     </>
   )
 }
