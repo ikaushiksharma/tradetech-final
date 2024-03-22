@@ -14,7 +14,8 @@ const FeatureCard = ({ icon, title, subtitle }: Props) => {
         <Image src={icon} alt="sometext" />
       </div>
       <div>
-        <h1 className='text-xl uppercase'>{title}</h1> <p className="text-sm">{subtitle}</p>
+        <h1 className="text-xl uppercase">{title}</h1>{' '}
+        <p className="text-sm">{subtitle}</p>
       </div>
     </div>
   )

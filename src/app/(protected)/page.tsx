@@ -2,6 +2,7 @@
 import FeaturesSection from '@/components/feature-section'
 import HeroSection from '@/components/hero'
 import CTAButton from '@/components/hero/cta'
+import StepSection from '@/components/steps-section'
 import SubSection1 from '@/components/sub-section1'
 import SubSection2 from '@/components/sub-section2'
 import SubSection3 from '@/components/sub-section3'
@@ -24,6 +25,8 @@ export default function Home() {
       <SubSection2 />
       <SubSection3 />
       <FeaturesSection />
+      <StepSection />
+      <div className="h-screen"></div>
     </>
   )
 }
