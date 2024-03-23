@@ -8,6 +8,7 @@ import {
   useScroll,
   motion,
 } from 'framer-motion'
+import logo from '../../app/assets/logo.svg'
 
 const Navbar = () => {
   const { scrollYProgress } = useScroll()
@@ -46,17 +47,17 @@ const Navbar = () => {
         className="fixed flex max-w-screen-2xl bg-white z-50 backdrop-blur-lg h-18 w-full justify-center items-center"
       >
         <div className="flex justify-between max-w-screen-xl items-center h-full w-full">
-          <div className="relative flex-[1] h-10">
+          <div className="relative flex-[0.8] h-6">
             <Image
               alt="logo"
               fill
-              src="/logo.webp"
+              src={logo}
               objectFit="contain"
               objectPosition="left top"
               className="invert"
             />
           </div>
-          <ul className="flex py-6 flex-[1] flex-grow justify-evenly">
+          <ul className="flex py-4 text-sm flex-[1] flex-grow justify-evenly">
             <li className="cursor-pointer hover:text-gray-500">Home</li>
             <li className="cursor-pointer hover:text-gray-500">About</li>
             <li className="cursor-pointer hover:text-gray-500">Blog</li>

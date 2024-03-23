@@ -2,6 +2,7 @@
 import FeaturesSection from '@/components/feature-section'
 import HeroSection from '@/components/hero'
 import CTAButton from '@/components/hero/cta'
+import HeroSection2 from '@/components/hero2'
 import StepSection from '@/components/steps-section'
 import SubSection1 from '@/components/sub-section1'
 import SubSection2 from '@/components/sub-section2'
@@ -20,6 +21,7 @@ export default function Home() {
   }, [])
   return (
     <>
+      <HeroSection2 />
       <HeroSection />
       <SubSection1 />
       <SubSection2 />

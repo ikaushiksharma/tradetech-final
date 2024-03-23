@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import '../globals.css'
 import Navbar from '@/components/common/navbar'
 import Footer from '@/components/common/footer'
+import Footer1 from '@/components/footer1'
 
 const myFont = localFont({ src: '../assets/VioletSans-Regular.woff2' })
 
@@ -23,6 +24,8 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer1 />
+
         <Footer />
       </body>
     </html>
