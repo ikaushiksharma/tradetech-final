@@ -5,7 +5,7 @@ import CTAButton from '../hero/cta'
 
 const SubSection2 = () => {
   return (
-    <div className="max-w-screen-2xl relative text-white p-16 w-full bg-purple-500 flex items-center justify-center h-screen">
+    <div className="max-w-screen-2xl relative text-white p-16 w-full bg-[#7E30E1] flex items-center justify-center h-screen">
       <div className="h-full flex items-end rounded-3xl justify-center flex-1 border border-white/20">
         <TiltCard />
       </div>

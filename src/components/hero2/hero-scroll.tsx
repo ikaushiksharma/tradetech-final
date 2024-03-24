@@ -34,7 +34,7 @@ export const HeroContainerScroll: React.FC<HeroContainerScrollProps> = ({}) => {
 
   return (
     <div
-      className="flex items-center justify-center relative pt-36 z-[99999]"
+      className="flex items-center z-50 justify-center relative pt-12"
       ref={containerRef}
     >
       <div
@@ -49,7 +49,7 @@ export const HeroContainerScroll: React.FC<HeroContainerScrollProps> = ({}) => {
           }}
           className="div max-w-5xl mx-auto text-center"
         >
-          <div className="bg-slate-800 z-[99999] no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  inline-block">
+          <div className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  inline-block">
             <span className="absolute inset-0 overflow-hidden rounded-full">
               <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
             </span>
@@ -101,14 +101,14 @@ const Card: React.FC<CardProps> = ({ rotate, scale }) => {
         rotateX: rotate, // rotate in X-axis
         scale,
       }}
-      className="max-w-5xl -mt-20 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-6 bg-background rounded-[30px] shadow-2xl"
+      className="max-w-5xl -mt-16 mx-auto h-[25rem] md:h-[38rem] w-full border-2 border-[#6C6C6C] p-2 bg-background rounded-3xl shadow-2xl"
     >
       <Image
         src="/assets/preview.png"
         alt="Banner preview"
         width={1200}
         height={1200}
-        className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+        className="rounded-2xl border-2 border-muted"
       />
     </motion.div>
   )

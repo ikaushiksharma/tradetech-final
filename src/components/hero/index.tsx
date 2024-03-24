@@ -14,7 +14,7 @@ const HeroSection = (props: Props) => {
           <CTAButton dark>Try Demo</CTAButton>
           <CTAButton>Get Started</CTAButton>
         </div>
-        <div className="w-4/5 flex items-center justify-center  absolute bottom-0 left-1/2 transform -translate-x-1/2 z-[-1]">
+        <div className="w-3/4 flex items-center justify-center absolute -bottom-16 left-1/2 transform -translate-x-1/2 z-[-1]">
           <video className="w-full" muted loop playsInline autoPlay>
             <source src="hero-animation.mp4" type="video/mp4" />
           </video>

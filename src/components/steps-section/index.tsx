@@ -53,7 +53,7 @@ const StepSection = () => {
   return (
     <main
       ref={container}
-      className="max-w-screen-2xl p-16 bg-purple-500 min-h-screen h-full"
+      className="max-w-screen-2xl p-16 bg-[#7E30E1] min-h-screen h-full"
     >
       <div className="sticky w-1/2 flex flex-col gap-6 items-center justify-center h-[60vh] top-36  text-white">
         <h1 className="text-6xl capitalize">3 simple steps</h1>

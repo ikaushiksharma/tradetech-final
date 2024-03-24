@@ -63,6 +63,8 @@ const SubSection3 = (props: Props) => {
       .from('.container4', { y: '100%' }, 'start2')
 
       .to('.image3', { y: '50%', x: '40%', scale: 0.8 }, 'start2')
+      .to('.overImg1', { display: 'block' }, 'start2')
+      .to('.overImg2', { display: 'block' }, 'start2')
       .add('end2')
       .to(
         '.image3',
@@ -104,16 +106,16 @@ const SubSection3 = (props: Props) => {
           <Image
             src={Card2}
             alt="image3"
-            className="absolute z-[-2] rotate-0 overImg1"
+            className="absolute hidden z-[-2] rotate-0 overImg1"
           />
           <Image
             src={Card4}
             alt="image4"
-            className="absolute z-[-1] rotate-0 overImg2"
+            className="absolute hidden z-[-1] rotate-0 overImg2"
           />
           <Image src={Card3} alt="image3" className="z-[1]" />
         </div>
-        <div className="w-full max-w-7xl -z-[1] fixed top-1/2 -translate-y-[25%] rounded-3xl mx-12 container4 mb-36 flex items-center text-white h-[70vh] bg-purple-500">
+        <div className="w-full max-w-7xl -z-[1] fixed top-1/2 -translate-y-[25%] rounded-3xl mx-12 container4 mb-36 flex items-center text-white h-[70vh] bg-[#7E30E1]">
           <div className="w-2/5 card_text opacity-0 h-full -translate-x-full flex gap-4 p-20 justify-center flex-col">
             <MiniHeading className={'w-fit'} text="Empowering You" />
             <div className="w-full gap-6 flex flex-col">
@@ -122,17 +124,14 @@ const SubSection3 = (props: Props) => {
                 Change The Game
               </div>
               <div className="flex gap-2 items-center text-3xl">
-                {' '}
                 <Tick />
                 Connect Faster
               </div>
               <div className="flex gap-2 items-center text-3xl">
-                {' '}
                 <Tick />
                 Positive Interactions
               </div>
               <div className="flex gap-2 items-center text-3xl">
-                {' '}
                 <Tick />
                 Extend Your Team
               </div>
