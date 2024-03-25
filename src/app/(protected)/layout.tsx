@@ -50,14 +50,14 @@ export default function RootLayout({
             <div className="w-1/2 flex justify-between">
               <div className="w-1/2"></div>
               <div className="text-gray-400 w-1/2">
-                <div>Newsletter</div>
-                <div className="flex space-x-1 font-thin  ">
+                <div className="w-full">Newsletter</div>
+                <div className="flex space-x-1 w-full font-thin">
                   <input
                     type="text"
                     placeholder="hey@gmail.com"
-                    className="bg-[#f2f2f2] py-3 text-xs outline-none px-4 pr-16"
+                    className="bg-[#f2f2f2] py-3 text-xs outline-none px-4 w-3/4"
                   />
-                  <div className="bg-[#f2f2f2] py-3 px-4">Get</div>
+                  <div className="bg-[#f2f2f2] py-3 px-4 w-1/4">Get</div>
                 </div>
                 <div className="flex text-xs pt-2">
                   Join our newsletter to stay informed about new tips,

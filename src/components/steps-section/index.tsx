@@ -1,6 +1,8 @@
 import { useScroll } from 'framer-motion'
 import React, { useRef } from 'react'
 import StepCard from './step-card'
+import { TextGenerateEffect } from '../ui/text-generate-effect'
+
 const projects = [
   {
     title: 'Connect with us',
@@ -50,6 +52,8 @@ const StepSection = () => {
     offset: ['start start', 'end end'],
   })
 
+  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
+  `
   return (
     <main
       ref={container}
@@ -62,7 +66,10 @@ const StepSection = () => {
           efficient lead conversion.
         </p>
       </div>
-      <div className="relative w-1/2 ml-auto">
+      <div className="relative w-1/2 flex flex-col justify-center ml-auto">
+        <div className="">
+          <TextGenerateEffect className="text-white" words={words} />
+        </div>
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05
           return (
