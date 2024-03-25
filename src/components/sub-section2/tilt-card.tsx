@@ -24,7 +24,7 @@ const TiltCard = () => {
     <Tilt
       options={defaultOptions}
       style={{ transformStyle: 'preserve-3d' }}
-      className="relative h-[90%] aspect-[9/16] transform bg-center bg-contain bg-no-repeat bg-[url('./assets/mobile.svg')]"
+      className="relative h-[80%] aspect-[9/16] transform bg-center bg-contain bg-no-repeat bg-[url('./assets/mobile.svg')]"
     >
       <Image
         src={item1}

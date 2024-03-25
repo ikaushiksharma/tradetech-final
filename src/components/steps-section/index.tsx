@@ -3,12 +3,12 @@ import React, { useRef } from 'react'
 import StepCard from './step-card'
 const projects = [
   {
-    title: 'Matthias Leidinger',
+    title: 'Connect with us',
     description:
       'Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.',
     src: 'rock.jpg',
     link: 'https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/',
-    color: '#BBACAF',
+    color: '#fff',
   },
   {
     title: 'Clément Chapillon',
@@ -53,7 +53,7 @@ const StepSection = () => {
   return (
     <main
       ref={container}
-      className="max-w-screen-2xl p-16 bg-[#7E30E1] min-h-screen h-full"
+      className="max-w-screen-2xl p-16 bg-black min-h-screen h-full"
     >
       <div className="sticky w-1/2 flex flex-col gap-6 items-center justify-center h-[60vh] top-36  text-white">
         <h1 className="text-6xl capitalize">3 simple steps</h1>

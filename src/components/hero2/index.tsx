@@ -7,7 +7,7 @@ type Props = {}
 
 const HeroSection2 = (props: Props) => {
   return (
-    <section className="w-full h-full relative">
+    <section className="w-full h-full relative pt-36">
       <div className="mx-auto w-full max-w-screen-xl px-2.5 md:px-20">
         <HeroContainerScroll />
       </div>

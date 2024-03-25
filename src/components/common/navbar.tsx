@@ -43,7 +43,7 @@ const Navbar = () => {
       // transition={{
       //   duration: 0.6,
       // }}
-      className="flex max-w-screen-2xl bg-white z-50 backdrop-blur-lg h-14 w-full justify-center items-center"
+      className="flex max-w-screen-2xl bg-white z-50 backdrop-blur-lg h-16 w-full justify-center items-center"
     >
       <div className="flex justify-between max-w-screen-xl items-center h-full w-full">
         <div className="relative flex-[0.8] h-6">
