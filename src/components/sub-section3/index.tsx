@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import MiniHeading from '../common/mini-heading'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { gsap } from 'gsap'
@@ -10,10 +10,13 @@ import Card2 from '../../app/assets/card2.svg'
 import Card3 from '../../app/assets/card3.svg'
 import Card4 from '../../app/assets/card4.svg'
 import Tick from '../common/tick'
+import { cn } from '@/lib/utils'
 type Props = {}
 
 const SubSection3 = (props: Props) => {
+  const [mounted, setMounted] = useState(false)
   useGSAP(() => {
+    setMounted(true)
     gsap.registerPlugin(ScrollTrigger)
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -61,7 +64,6 @@ const SubSection3 = (props: Props) => {
       .to('.image2', { display: 'none' }, 'transit')
       .add('start2')
       .from('.container4', { y: '100%' }, 'start2')
-
       .to('.image3', { y: '50%', x: '40%', scale: 0.8 }, 'start2')
       .to('.overImg1', { display: 'block' }, 'start2')
       .to('.overImg2', { display: 'block' }, 'start2')
@@ -115,7 +117,12 @@ const SubSection3 = (props: Props) => {
           />
           <Image src={Card3} alt="image3" className="z-[1]" />
         </div>
-        <div className="w-full max-w-7xl -z-[1] fixed top-1/2 -translate-y-[25%] rounded-3xl mx-12 container4 mb-36 flex items-center text-white h-[70vh] bg-[#7E30E1]">
+        <div
+          className={cn([
+            'w-full max-w-7xl -z-[1] fixed top-1/2 -translate-y-[25%] rounded-3xl mx-12 container4 mb-36 flex items-center text-white h-[70vh] bg-black',
+            mounted ? 'opacity-100' : 'opacity-0',
+          ])}
+        >
           <div className="w-2/5 card_text opacity-0 h-full -translate-x-full flex gap-4 p-20 justify-center flex-col">
             <MiniHeading className={'w-fit'} text="Empowering You" />
             <div className="w-full gap-6 flex flex-col">
