@@ -2,14 +2,19 @@ import React from 'react'
 import TiltCard from './tilt-card'
 import Tick from '../common/tick'
 import CTAButton from '../hero/cta'
+import Robo from './robo'
 
 const SubSection2 = () => {
   return (
     <div className="max-w-screen-2xl relative text-white p-16 w-full bg-black flex items-center justify-center h-screen">
-      <div className="h-full flex items-end rounded-3xl justify-center flex-1 border-white/20">
-        <TiltCard />
+      <div className="h-full flex absolute top-0 -left-[10%] items-end rounded-3xl justify-center w-full">
+        {/* <TiltCard /> */}
+        <Robo />
       </div>
-      <div className="h-full gap-6 flex flex-col justify-center p-16 flex-1">
+      <div
+        className="h-full gap-6 flex flex-col absolute right-0 top-0 justify-center p-16 w-1/2
+      "
+      >
         <div className="text-4xl">Our World Class Features</div>
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-xl">
