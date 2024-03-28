@@ -1,13 +1,13 @@
 'use client'
-import React from 'react'
-import { useScroll, useTransform, motion } from 'framer-motion'
+import React, { useRef } from 'react'
+import { useScroll, useTransform, motion, MotionValue } from 'framer-motion'
 import Image from 'next/image'
 import { TypewriterEffect } from './typewritter-effect'
 
 interface HeroContainerScrollProps {}
 
 export const HeroContainerScroll: React.FC<HeroContainerScrollProps> = ({}) => {
-  const containerRef = React.useRef<any>(null)
+  const containerRef = useRef<any>(null)
   const { scrollYProgress } = useScroll({
     target: containerRef,
   })
@@ -30,8 +30,7 @@ export const HeroContainerScroll: React.FC<HeroContainerScrollProps> = ({}) => {
 
   const rotate = useTransform(scrollYProgress, [0, 1], [20, 0])
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions())
-  const translateY = useTransform(scrollYProgress, [0, 1], [0, -100])
-
+  const translate = useTransform(scrollYProgress, [0, 1], [0, -100])
   return (
     <div
       className="flex items-center z-50 justify-center relative pt-12"
@@ -45,9 +44,9 @@ export const HeroContainerScroll: React.FC<HeroContainerScrollProps> = ({}) => {
       >
         <motion.div
           style={{
-            translateY,
+            translateY: translate,
           }}
-          className="div max-w-5xl mx-auto text-center"
+          className="max-w-5xl relative mx-auto text-center"
         >
           <div className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  inline-block">
             <span className="absolute inset-0 overflow-hidden rounded-full">

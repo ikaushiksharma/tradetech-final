@@ -1,5 +1,6 @@
 'use client'
 import FeaturesSection from '@/components/feature-section'
+import FeaturesSection2 from '@/components/feature-section2'
 import HeroSection from '@/components/hero'
 import CTAButton from '@/components/hero/cta'
 import HeroSection2 from '@/components/hero2'
@@ -26,7 +27,8 @@ export default function Home() {
       <SubSection1 />
       <SubSection2 />
       <SubSection3 />
-      <FeaturesSection />
+      {/* <FeaturesSection /> */}
+      <FeaturesSection2 />
       <StepSection />
     </>
   )
