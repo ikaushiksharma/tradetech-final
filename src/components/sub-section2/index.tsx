@@ -7,7 +7,7 @@ import Robo from './robo'
 const SubSection2 = () => {
   return (
     <div className="max-w-screen-2xl relative text-white p-16 w-full bg-black flex items-center justify-center h-screen">
-      <div className="h-full flex absolute top-0 -left-[10%] items-end rounded-3xl justify-center w-full">
+      <div className="h-full flex absolute top-0 left-0 items-end rounded-3xl justify-center w-full">
         {/* <TiltCard /> */}
         <Robo />
       </div>
