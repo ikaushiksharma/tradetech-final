@@ -7,6 +7,7 @@ import Footer1 from '@/components/footer1'
 import Image from 'next/image'
 import logo from 'assets/logo.svg'
 import Footer2 from '@/components/common/footer2'
+import HeroSection2 from '@/components/hero2'
 
 const myFont = localFont({ src: 'assets/VioletSans-Regular.woff2' })
 
@@ -26,6 +27,8 @@ export default function RootLayout({
         className={`${myFont.className} overflow-clip max-w-screen-2xl selection:text-white selection:bg-[#7E30E1] w-full mx-auto`}
       >
         <Navbar />
+        <HeroSection2 />
+
         {children}
         <Footer1 />
         {/*  */}

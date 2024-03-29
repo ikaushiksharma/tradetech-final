@@ -22,7 +22,6 @@ export default function Home() {
   }, [])
   return (
     <>
-      <HeroSection2 />
       <HeroSection />
       <SubSection1 />
       <SubSection2 />
