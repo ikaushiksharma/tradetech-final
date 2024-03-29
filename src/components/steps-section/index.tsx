@@ -3,6 +3,7 @@ import React, { useRef } from 'react'
 import StepCard from './step-card'
 import { TextGenerateEffect } from '../ui/text-generate-effect'
 import MiniHeading from '../common/mini-heading'
+import { Spotlight } from './spotlight'
 const projects = [
   {
     title: 'Provide all your data',
@@ -32,8 +33,13 @@ const StepSection = () => {
   return (
     <main
       ref={container}
-      className="max-w-screen-2xl p-16 bg-black min-h-screen h-full"
+      className="max-w-screen-2xl relative  p-16  min-h-screen h-full"
     >
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white"
+      />
+      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#7e30e1_100%)]"></div>
       <div className="sticky w-1/2 flex  flex-col gap-6 justify-center h-[60vh] top-36  text-white">
         <h1 className="text-7xl max-w-md leading-[1.4]  font-bold capitalize">
           <MiniHeading text="Workflow" className="text-left justify-start" />

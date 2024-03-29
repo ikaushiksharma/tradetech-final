@@ -53,14 +53,14 @@ const StepCard = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className="flex flex-col justify-between bg-white/95 relative -top-1/4 min-h-96 w-[40rem] rounded-3xl p-8 origin-top"
+        className="flex flex-col justify-between bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 to-gray-900 text-white relative -top-1/4 min-h-96 w-[40rem] rounded-3xl p-8 origin-top"
       >
         <div className="relative w-12 h-12">
           <Image src={getImage()} alt="" fill />
         </div>
         <div className="gap-6 flex flex-col">
           <h2 className="text-3xl">{title}</h2>
-          <div className="w-full relative top-[10%]">
+          <div className="w-full text-gray-300 relative top-[10%]">
             <p className="text-base first-letter:text-2xl">{description}</p>
           </div>
         </div>
