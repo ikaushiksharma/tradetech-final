@@ -14,7 +14,7 @@ const MiniHeading = ({ text, className }: Props) => {
         className,
       ])}
     >
-      <div className="rounded-full w-4 h-4 bg-green-300"></div>
+      <div className="rounded-full w-4 h-4 bg-[#7E30E1]"></div>
       <h6>{text}</h6>
     </div>
   )

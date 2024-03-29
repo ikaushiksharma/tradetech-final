@@ -2,6 +2,7 @@ import { useScroll } from 'framer-motion'
 import React, { useRef } from 'react'
 import StepCard from './step-card'
 import { TextGenerateEffect } from '../ui/text-generate-effect'
+import MiniHeading from '../common/mini-heading'
 const projects = [
   {
     title: 'Provide all your data',
@@ -33,17 +34,20 @@ const StepSection = () => {
       ref={container}
       className="max-w-screen-2xl p-16 bg-black min-h-screen h-full"
     >
-      <div className="sticky w-1/2 flex flex-col gap-6 items-center justify-center h-[60vh] top-36  text-white">
-        <h1 className="text-6xl capitalize">3 simple steps</h1>
-        <p className="text-xl max-w-sm text-center text-gray-200">
+      <div className="sticky w-1/2 flex  flex-col gap-6 justify-center h-[60vh] top-36  text-white">
+        <h1 className="text-7xl max-w-md leading-[1.4]  font-bold capitalize">
+          <MiniHeading text="Workflow" className="text-left justify-start" />
+          Get started today in 3 simple steps
+        </h1>
+        <p className="text-xl max-w-sm  text-gray-400">
           Effortlessly integrate our secure and reliable copilot for fast and
           efficient lead conversion.
         </p>
       </div>
       <div className="relative w-1/2 flex flex-col justify-center ml-auto">
-        <div className="">
+        {/* <div className="">
           <TextGenerateEffect className="text-white" words={words} />
-        </div>
+        </div> */}
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05
           return (
