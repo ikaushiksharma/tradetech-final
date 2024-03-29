@@ -12,14 +12,14 @@ import Image from 'next/image'
 import { useEffect } from 'react'
 
 export default function Home() {
-  useEffect(() => {
-    ;(async () => {
-      // @ts-ignore
-      const LocomotiveScroll = (await import('locomotive-scroll')).default
-      const locomotiveScroll = new LocomotiveScroll()
-    })()
-    return () => {}
-  }, [])
+  // useEffect(() => {
+  //   ;(async () => {
+  //     // @ts-ignore
+  //     const LocomotiveScroll = (await import('locomotive-scroll')).default
+  //     const locomotiveScroll = new LocomotiveScroll()
+  //   })()
+  //   return () => {}
+  // }, [])
   return (
     <>
       {/* <HeroSection2 />
