@@ -1,10 +1,9 @@
 import { cn } from '@/lib/utils'
 import React from 'react'
-import { ClassNameValue } from 'tailwind-merge'
 
 const Footer2 = () => {
   return (
-    <div className="h-screen relative overflow-clip bg-white w-full">
+    <div className="min-h-screen h-full relative bg-white w-full">
       <div className="absolute bg-black rounded-tr-3xl rounded-tl-3xl h-[90%] w-full  bottom-0">
         <div className="flex justify-between gap-6 px-8">
           <Card
