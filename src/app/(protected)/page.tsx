@@ -22,11 +22,11 @@ export default function Home() {
   }, [])
   return (
     <>
-      <HeroSection2 />
+      {/* <HeroSection2 />
       <HeroSection />
       <SubSection1 />
       <SubSection2 />
-      <SubSection3 />
+      <SubSection3 /> */}
       {/* <FeaturesSection /> */}
       <FeaturesSection2 />
       <StepSection />
