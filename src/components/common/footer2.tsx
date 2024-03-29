@@ -3,9 +3,9 @@ import React from 'react'
 
 const Footer2 = () => {
   return (
-    <div className="min-h-screen h-full relative bg-white w-full">
+    <div className="min-h-screen h-fit relative bg-white w-full">
       <div className="absolute bg-black rounded-tr-3xl rounded-tl-3xl h-[90%] w-full  bottom-0">
-        <div className="flex justify-between gap-6 px-8">
+        <div className="flex justify-between isolate gap-6 px-8">
           <Card
             className="bg-red-300"
             subtitle="want to know more?"
@@ -17,7 +17,7 @@ const Footer2 = () => {
             title="Yes, Let's Chat"
           />
         </div>
-        <div className="w-full px-16 text-xl">
+        <div className="w-full px-16 flex-1 text-xl">
           <div className="flex w-full text-white justify-between">
             <div className="flex-1 h-full">
               <ul className="gap-4 flex flex-col">
@@ -51,7 +51,7 @@ const Footer2 = () => {
             </div>
           </div>
         </div>
-        <div className="absolute overflow-clip bottom-0 w-full h-1/3">
+        <div className="absolute flex-1 bottom-0 w-full h-1/3">
           <div className="text-white z-10 isolate relative top-1/2 px-16 flex justify-between">
             <div className="flex gap-8">
               <p>Terms & Conditions</p>
@@ -60,7 +60,7 @@ const Footer2 = () => {
             </div>
             <div>&copy; 2024 TradeTech. All rights reserved</div>
           </div>
-          <div className="text-[18rem] absolute font-bold -translate-y-10 text-neutral-900 text-center">
+          <div className="text-[18rem] absolute w-full -translate-y-10 text-neutral-900 text-center">
             TradeTech
           </div>
         </div>

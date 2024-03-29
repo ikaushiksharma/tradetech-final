@@ -74,7 +74,9 @@
     @apply bg-background text-foreground;
   }
 }
-
+html {
+  overflow: hidden;
+}
 .tiltCard {
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -88,6 +90,10 @@
   display: none;
 }
 
-div {
+* {
   /* border: 1px solid red; */
+}
+
+.h {
+  border: 1px solid blue;
 }

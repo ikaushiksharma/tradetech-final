@@ -33,7 +33,7 @@ const StepSection = () => {
   return (
     <main
       ref={container}
-      className="max-w-screen-2xl relative  p-16  min-h-screen h-full"
+      className="max-w-screen-2xl relative p-16  min-h-screen h-full"
     >
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"

@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import '../globals.css'
+import './globals.css'
 import Navbar from '@/components/common/navbar'
 import Footer from '@/components/common/footer'
 import Footer1 from '@/components/footer1'
 import Image from 'next/image'
-import logo from '../assets/logo.svg'
+import logo from 'assets/logo.svg'
 import Footer2 from '@/components/common/footer2'
 
-const myFont = localFont({ src: '../assets/VioletSans-Regular.woff2' })
+const myFont = localFont({ src: 'assets/VioletSans-Regular.woff2' })
 
 export const metadata: Metadata = {
   title: 'TradeTech AI',
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${myFont.className} max-w-screen-2xl selection:text-white selection:bg-[#7E30E1] w-full min-h-screen mx-auto`}
+        className={`${myFont.className} overflow-clip max-w-screen-2xl selection:text-white selection:bg-[#7E30E1] w-full mx-auto`}
       >
         <Navbar />
         {children}
