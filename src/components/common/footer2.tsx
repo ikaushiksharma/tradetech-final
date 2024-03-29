@@ -51,7 +51,7 @@ const Footer2 = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 w-full h-1/3">
+        <div className="absolute overflow-clip bottom-0 w-full h-1/3">
           <div className="text-white z-10 isolate relative top-1/2 px-16 flex justify-between">
             <div className="flex gap-8">
               <p>Terms & Conditions</p>

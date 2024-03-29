@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeaturesSection2 = () => {
   return (
-    <div className="max-w-screen-2xl relative gap-12 bg-gray-100 p-16 w-full flex flex-col items-center min-h-screen h-full">
+    <div className="max-w-screen-2xl relative gap-12 mt-12 bg-gray-100 p-16 w-full flex flex-col items-center min-h-screen h-full">
       <div className="max-w-xl text-6xl mb-12 font-bold">
         <h1 className="text-center">
           Seamlessly enhance your current sales strategy
