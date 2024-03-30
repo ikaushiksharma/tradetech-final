@@ -10,14 +10,33 @@ import SubSection2 from '@/components/sub-section2'
 import SubSection3 from '@/components/sub-section3'
 import Image from 'next/image'
 import { useEffect } from 'react'
+import Lenis from '@studio-freight/lenis'
+import gsap from 'gsap'
 
 export default function Home() {
+  // useEffect(() => {
+  //   ;(async () => {
+  //     // @ts-ignore
+  //     const LocomotiveScroll = (await import('locomotive-scroll')).default
+  //     const locomotiveScroll = new LocomotiveScroll()
+  //   })()
+  //   return () => {}
+  // }, [])
   useEffect(() => {
-    ;(async () => {
-      // @ts-ignore
-      const LocomotiveScroll = (await import('locomotive-scroll')).default
-      const locomotiveScroll = new LocomotiveScroll()
-    })()
+    const lenis = new Lenis()
+
+    // @ts-ignore
+    lenis.on('scroll', (e) => {
+      console.log(e)
+    })
+
+    // @ts-ignore
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
     return () => {}
   }, [])
   return (
