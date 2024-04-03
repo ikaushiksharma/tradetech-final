@@ -4,8 +4,8 @@ import React from 'react'
 const Footer2 = () => {
   return (
     <div className="min-h-screen h-fit relative bg-white w-full">
-      <div className="absolute bg-black rounded-tr-3xl rounded-tl-3xl h-[90%] w-full  bottom-0">
-        <div className="flex justify-between isolate gap-6 px-8">
+      <div className="absolute bg-black rounded-tr-3xl rounded-tl-3xl h-[120dvh] md:h-[90%] w-full  bottom-0">
+        <div className="flex max-md:flex-col justify-between isolate gap-6 max-md:pt-12 px-8">
           <Card
             className="bg-red-300"
             subtitle="want to know more?"
@@ -17,50 +17,54 @@ const Footer2 = () => {
             title="Yes, Let's Chat"
           />
         </div>
-        <div className="w-full px-16 flex-1 text-xl">
-          <div className="flex w-full text-white justify-between">
-            <div className="flex-1 h-full">
-              <ul className="gap-4 flex flex-col">
-                <li>About</li>
-                <li>Services</li>
-                <li>Blog</li>
-                <li>Contact</li>
-              </ul>
+        <div className="w-full max-md:py-12 md:h-[60vh] px-8 md:px-16 flex-1 md:text-xl">
+          <div className="flex max-md:flex-col w-full max-md:gap-6 text-white justify-between">
+            <div className="flex w-full md:w-1/2">
+              <div className="flex-1 h-full">
+                <ul className="gap-1 md:gap-4 flex flex-col">
+                  <li>About</li>
+                  <li>Services</li>
+                  <li>Blog</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              <div className="flex-1 h-full">
+                <ul className="gap-1 md:gap-4 flex flex-col">
+                  <li>Work</li>
+                  <li>Work Gallery</li>
+                  <li>Studio</li>
+                  <li>Internships</li>
+                </ul>
+              </div>
             </div>
-            <div className="flex-1 h-full">
-              <ul className="gap-4 flex flex-col">
-                <li>Work</li>
-                <li>Work Gallery</li>
-                <li>Studio</li>
-                <li>Internships</li>
-              </ul>
-            </div>
-            <div className="flex-1 h-full">
-              <ul className="gap-4 flex flex-col">
-                <li>Services</li>
-                <li>Brand</li>
-                <li>Content</li>
-                <li>Social Media</li>
-              </ul>
-            </div>
-            <div className="flex-1 h-full">
-              <ul className="gap-4 flex flex-col">
-                <li>Full Address Lorem ipsum dolor sit,</li>
-                <li>+91 8888888888</li>
-              </ul>
+            <div className="flex w-full md:w-1/2">
+              <div className="flex-1 h-full">
+                <ul className="gap-1 md:gap-4 flex flex-col">
+                  <li>Services</li>
+                  <li>Brand</li>
+                  <li>Content</li>
+                  <li>Social Media</li>
+                </ul>
+              </div>
+              <div className="flex-1 h-full">
+                <ul className="gap-1 md:gap-4 flex flex-col">
+                  <li>Full Address Lorem ipsum dolor sit,</li>
+                  <li>+91 8888888888</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
         <div className="absolute flex-1 bottom-0 w-full h-1/3">
-          <div className="text-white z-10 isolate relative top-1/2 px-16 flex justify-between">
-            <div className="flex gap-8">
+          <div className="text-white max-md:text-sm z-10 isolate relative top-1/2 px-8 md:px-16 md:flex justify-between">
+            <div className="md:flex max-md:space-y-2 gap-8">
               <p>Terms & Conditions</p>
               <p>Privacy Policy</p>
               <p>Cookie Policy</p>
             </div>
             <div>&copy; 2024 TradeTech. All rights reserved</div>
           </div>
-          <div className="text-[18rem] absolute w-full -translate-y-10 text-neutral-900 text-center">
+          <div className="text-9xl md:text-[18rem] absolute w-full translate-y-20 md:-translate-y-10 text-neutral-900 text-center">
             TradeTech
           </div>
         </div>
@@ -83,14 +87,14 @@ const Card = ({
   return (
     <div
       className={cn([
-        'h-52  rounded-3xl relative text-black px-12 py-6 -translate-y-1/2 w-1/2',
+        'h-52  rounded-3xl relative text-black px-4 md:px-12 py-6 md:-translate-y-1/2 md:w-1/2',
         className,
       ])}
     >
       <div className="flex flex-row items-center h-full justify-center w-full">
         <div className="flex-1 h-full flex flex-col justify-evenly">
           <div className="text-lg capitalize">{subtitle}</div>
-          <div className="text-3xl">{title}</div>
+          <div className="text-xl md:text-3xl">{title}</div>
         </div>
         <div className="h-3/4 aspect-square">
           <svg
