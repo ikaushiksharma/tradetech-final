@@ -14,21 +14,8 @@ import Lenis from '@studio-freight/lenis'
 import gsap from 'gsap'
 
 export default function Home() {
-  // useEffect(() => {
-  //   ;(async () => {
-  //     // @ts-ignore
-  //     const LocomotiveScroll = (await import('locomotive-scroll')).default
-  //     const locomotiveScroll = new LocomotiveScroll()
-  //   })()
-  //   return () => {}
-  // }, [])
   useEffect(() => {
     const lenis = new Lenis()
-
-    // @ts-ignore
-    lenis.on('scroll', (e) => {
-      console.log(e)
-    })
 
     // @ts-ignore
     function raf(time) {

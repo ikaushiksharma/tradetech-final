@@ -36,13 +36,13 @@ const sideVariants = {
 
 export default function MobileNav() {
   const [open, cycleOpen] = useCycle(false, true)
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'auto'
-    }
-  }, [open])
+  // useEffect(() => {
+  //   if (open) {
+  //     document.body.style.overflow = 'hidden'
+  //   } else {
+  //     document.body.style.overflow = 'auto'
+  //   }
+  // }, [open])
 
   return (
     <nav className="flex fixed left-0 z-[1000] sm:hidden">
@@ -108,7 +108,7 @@ export default function MobileNav() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6 invert"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"
