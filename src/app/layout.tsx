@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${myFont.className} select-none overflow-clip max-w-screen-2xl selection:text-white selection:bg-[#7E30E1] w-full max-md:px-4 max-md:w-[100dvh] mx-auto`}
+        className={`${myFont.className} select-none overflow-clip max-w-screen-2xl selection:text-white selection:bg-[#7E30E1] w-full mx-auto`}
       >
         <Navbar />
         <HeroSection2 />

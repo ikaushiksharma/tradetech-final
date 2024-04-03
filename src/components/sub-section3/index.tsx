@@ -60,11 +60,13 @@ const SubSection3 = (props: Props) => {
       // add a duration
       .add('transit', '-=0.5')
       .to('.image3', { display: 'block' }, 'transit')
+      .to('.image3_mobile', { display: 'block' }, 'transit')
       .to('.image1', { display: 'none' }, 'transit')
       .to('.image2', { display: 'none' }, 'transit')
       .add('start2')
       .from('.container4', { y: '100%' }, 'start2')
       .to('.image3', { y: '50%', x: '40%', scale: 0.8 }, 'start2')
+      .to('.image3_mobile', { y: '10%', scale: 0.8 }, 'start2')
       .to('.overImg1', { display: 'block' }, 'start2')
       .to('.overImg2', { display: 'block' }, 'start2')
       .add('end2')
@@ -88,7 +90,7 @@ const SubSection3 = (props: Props) => {
     <div className="w-full container3 relative px-16 flex items-center justify-center h-screen">
       <div className="heading opacity-0 scale-0">
         <MiniHeading text="Elevate" />
-        <h1 className="text-7xl max-w-xl uppercase tracking-wider text-center">
+        <h1 className="md:text-7xl text-5xl max-w-xl uppercase tracking-wider text-center">
           Let&apos;s elevate it further
         </h1>
       </div>
@@ -96,14 +98,14 @@ const SubSection3 = (props: Props) => {
       <Image
         alt="img2"
         src={Card2}
-        className="absolute top-1/2 image2 -translate-y-1/2"
+        className="absolute max-md:w-4/5 top-1/2 image2 -translate-y-1/2"
       />
       <Image
         alt="img1"
         src={Card1}
-        className="absolute top-1/2 image1 -translate-y-1/2"
+        className="absolute max-md:w-4/5 top-1/2 image1 -translate-y-1/2"
       />
-      <div className="image3 absolute top-1/2 hidden -translate-y-1/2">
+      <div className="image3 absolute max-md:opacity-0 max-md:w-4/5 top-1/2 hidden -translate-y-1/2">
         <Image
           src={Card2}
           alt="image3"
@@ -112,9 +114,22 @@ const SubSection3 = (props: Props) => {
         <Image
           src={Card4}
           alt="image4"
-          className="absolute hidden z-[-1] rotate-0 overImg2"
+          className="absolute hidden max-md:w-4/5 z-[-1] rotate-0 overImg2"
         />
-        <Image src={Card3} alt="image3" className="z-[1]" />
+        <Image src={Card3} alt="image3" className="z-[1] " />
+      </div>
+      <div className="image3_mobile absolute md:opacity-0 max-md:w-4/5 top-1/2 hidden -translate-y-1/2">
+        <Image
+          src={Card2}
+          alt="image3"
+          className="absolute hidden z-[-2] rotate-0 overImg1"
+        />
+        <Image
+          src={Card4}
+          alt="image4"
+          className="absolute hidden max-md:w-4/5 z-[-1] rotate-0 overImg2"
+        />
+        <Image src={Card3} alt="image3" className="z-[1] " />
       </div>
       <div
         className={cn([
@@ -122,22 +137,22 @@ const SubSection3 = (props: Props) => {
           mounted ? 'opacity-100' : 'opacity-0',
         ])}
       >
-        <div className="w-2/5 card_text opacity-0 h-full -translate-x-full flex gap-4 p-20 justify-center flex-col">
+        <div className="w-full md:w-2/5 card_text opacity-0 md:h-full h-1/2 max-md:mt-auto max-md:mb-6 -translate-x-full flex gap-4 p-20 justify-center flex-col">
           <MiniHeading className={'w-fit'} text="Empowering You" />
           <div className="w-full gap-6 flex flex-col">
-            <div className="flex gap-2 items-center text-3xl">
+            <div className="flex gap-2 items-center text-xl md:text-3xl">
               <Tick />
               Change The Game
             </div>
-            <div className="flex gap-2 items-center text-3xl">
+            <div className="flex gap-2 items-center text-xl md:text-3xl">
               <Tick />
               Connect Faster
             </div>
-            <div className="flex gap-2 items-center text-3xl">
+            <div className="flex gap-2 items-center text-xl md:text-3xl">
               <Tick />
               Positive Interactions
             </div>
-            <div className="flex gap-2 items-center text-3xl">
+            <div className="flex gap-2 items-center text-xl md:text-3xl">
               <Tick />
               Extend Your Team
             </div>

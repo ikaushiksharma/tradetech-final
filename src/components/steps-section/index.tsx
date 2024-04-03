@@ -27,20 +27,17 @@ const StepSection = () => {
     target: container,
     offset: ['start start', 'end end'],
   })
-
-  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-  `
   return (
     <main
       ref={container}
-      className="max-w-screen-2xl relative p-16  min-h-screen h-full"
+      className="max-w-screen-2xl relative p-16 min-h-screen h-full"
     >
-      <Spotlight
+      {/* <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
-      />
+      /> */}
       <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#7e30e1_100%)]"></div>
-      <div className="sticky w-1/2 flex  flex-col gap-6 justify-center h-[60vh] top-36  text-white">
+      <div className="sticky w-1/2 flex flex-col gap-6 justify-center h-[60vh] top-36 text-white">
         <h1 className="text-7xl max-w-md leading-[1.4]  font-bold capitalize">
           <MiniHeading text="Workflow" className="text-left justify-start" />
           Get started today in 3 simple steps

@@ -72,11 +72,11 @@ export const HeroContainerScroll: React.FC<HeroContainerScrollProps> = ({}) => {
             </div>
             <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-primary/0 via-primary/90 to-primary/0 transition-opacity duration-500 group-hover:opacity-40"></span>
           </div>
-          <div className="text-center font-medium mt-4 z-[99999]">
+          <div className="text-center font-medium mt-4 z-[100]">
             <TypewriterEffect />
           </div>
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-            <h1 className="text-7xl font-bold text-center md:text-9xl z-[99999]">
+            <h1 className="text-7xl max-md:whitespace-nowrap font-bold text-center md:text-9xl z-[100]">
               TradeTech
             </h1>
           </div>
@@ -100,7 +100,7 @@ const Card: React.FC<CardProps> = ({ rotate, scale }) => {
         rotateX: rotate, // rotate in X-axis
         scale,
       }}
-      className="max-w-5xl -mt-16 mx-auto h-[25rem] md:h-[38rem] w-full border-2 border-[#6C6C6C] p-2 bg-background rounded-3xl shadow-2xl"
+      className="max-w-5xl -mt-16 mx-auto h-[15rem] sm:h-[25rem] md:h-[38rem] w-full border-2 border-[#6C6C6C] p-2 bg-background rounded-3xl shadow-2xl"
     >
       <Image
         src="/assets/preview.png"

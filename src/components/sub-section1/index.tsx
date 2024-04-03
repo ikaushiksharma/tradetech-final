@@ -36,28 +36,28 @@ const SubSection1 = (props: Props) => {
   })
 
   return (
-    <div className="w-full relative px-16 container flex items-center justify-center h-screen">
-      <div className="flex w-32 items-center justify-center  absolute bottom-1/2 -translate-y-[80%] left-1/2 transform -translate-x-1/2 z-[-1]">
+    <div className="w-full relative md:px-16 container flex items-center justify-center h-screen">
+      <div className="flex w-16 md:w-32 items-center justify-center absolute bottom-0 md:bottom-1/2 -translate-y-[80%] left-1/2 transform -translate-x-1/2 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin1.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex w-32 items-center justify-center  absolute left-40 top-56 z-[-1]">
+      <div className="flex w-16 md:w-32 items-center justify-center absolute left-40 top-12 md:top-56 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin2.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex w-32 items-center justify-center  absolute right-40 bottom-56 z-[-1]">
+      <div className="flex w-16 md:w-32 items-center justify-center absolute right-2 md:right-40 bottom-24 md:bottom-56 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin3.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex w-32 items-center justify-center  absolute top-40 right-56 z-[-1]">
+      <div className="flex w-16 md:w-32 items-center justify-center  absolute top-40 right-2 md:right-56 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin4.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex w-32 items-center justify-center  absolute bottom-40 left-56 z-[-1]">
+      <div className="flex w-16 md:w-32 items-center justify-center  absolute bottom-40 left-4 md:left-56 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin5.mp4" type="video/mp4" />
         </video>

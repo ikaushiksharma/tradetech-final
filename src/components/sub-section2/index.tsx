@@ -5,12 +5,12 @@ import Robo from './robo'
 
 const SubSection2 = () => {
   return (
-    <div className="max-w-screen-2xl relative text-white p-16 w-full bg-black flex items-center justify-center h-screen">
-      <div className="h-full flex absolute top-0 left-0 items-end rounded-3xl justify-center w-1/2">
+    <div className="max-w-screen-2xl relative text-white md:p-16 w-full bg-black flex items-center justify-center h-screen">
+      <div className="h-full hidden md:flex absolute top-0 left-0 items-end rounded-3xl justify-center w-1/2">
         <Robo />
       </div>
       <div
-        className="h-full gap-6 flex flex-col absolute right-0 top-0 justify-center p-16 w-1/2
+        className="h-full gap-6 flex flex-col absolute right-0 top-0 justify-center p-8 md:p-16 w-full md:w-1/2
       "
       >
         <div className="text-4xl">Our World Class Features</div>

@@ -10,7 +10,7 @@ const CTAButton = ({ children, dark = false, arrow = false }: Props) => {
   return (
     <button
       className={cn([
-        'py-3 px-6  rounded-full',
+        'py-3 px-6 whitespace-nowrap  rounded-full',
         dark
           ? 'bg-[#220a33] text-white'
           : 'bg-white text-slate-800 border border-gray-500',
