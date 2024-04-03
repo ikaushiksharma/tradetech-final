@@ -8,7 +8,7 @@ import {
   useScroll,
   motion,
 } from 'framer-motion'
-import logo from '../../app/assets/logo.svg'
+import logo from '@/assets/logo.svg'
 
 const Navbar = () => {
   // const { scrollYProgress } = useScroll()

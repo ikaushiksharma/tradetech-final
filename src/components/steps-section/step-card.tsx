@@ -3,9 +3,9 @@ import { useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
-import step1 from '@/app/assets/step1.svg'
-import step2 from '@/app/assets/step2.svg'
-import step3 from '@/app/assets/step3.svg'
+import step1 from '@/assets/step1.svg'
+import step2 from '@/assets/step2.svg'
+import step3 from '@/assets/step3.svg'
 
 type Props = {
   i: number

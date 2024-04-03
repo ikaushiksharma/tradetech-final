@@ -9,7 +9,7 @@ import logo from 'assets/logo.svg'
 import Footer2 from '@/components/common/footer2'
 import HeroSection2 from '@/components/hero2'
 
-const myFont = localFont({ src: 'assets/VioletSans-Regular.woff2' })
+const myFont = localFont({ src: '../assets/VioletSans-Regular.woff2' })
 
 export const metadata: Metadata = {
   title: 'TradeTech AI',
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${myFont.className} overflow-clip max-w-screen-2xl selection:text-white selection:bg-[#7E30E1] w-full mx-auto`}
+        className={`${myFont.className} select-none overflow-clip max-w-screen-2xl selection:text-white selection:bg-[#7E30E1] w-full mx-auto`}
       >
         <Navbar />
         <HeroSection2 />

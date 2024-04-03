@@ -1,5 +1,4 @@
 import React from 'react'
-import TiltCard from './tilt-card'
 import Tick from '../common/tick'
 import CTAButton from '../hero/cta'
 import Robo from './robo'
@@ -8,7 +7,6 @@ const SubSection2 = () => {
   return (
     <div className="max-w-screen-2xl relative text-white p-16 w-full bg-black flex items-center justify-center h-screen">
       <div className="h-full flex absolute top-0 left-0 items-end rounded-3xl justify-center w-1/2">
-        {/* <TiltCard /> */}
         <Robo />
       </div>
       <div
