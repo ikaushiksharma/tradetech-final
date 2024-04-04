@@ -1,52 +1,13 @@
-'use client'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React from 'react'
 import SocialButton from './social-button'
-import {
-  AnimatePresence,
-  useMotionValueEvent,
-  useScroll,
-  motion,
-} from 'framer-motion'
 import logo from '@/assets/logo.svg'
 import MobileNav from './mobile-nav'
 
 const Navbar = () => {
-  // const { scrollYProgress } = useScroll()
-
-  // const [visible, setVisible] = useState(true)
-
-  // useMotionValueEvent(scrollYProgress, 'change', (current) => {
-  //   if (typeof current === 'number') {
-  //     let direction = current! - scrollYProgress.getPrevious()!
-
-  //     if (scrollYProgress.get() < 0.05) {
-  //       setVisible(false)
-  //     } else {
-  //       if (direction < 0) {
-  //         setVisible(true)
-  //       } else {
-  //         setVisible(false)
-  //       }
-  //     }
-  //   }
-  //   return () => scrollYProgress.destroy()
-  // })
-
   return (
     <>
-      <div
-        // initial={{
-        //   y: -100,
-        // }}
-        // animate={{
-        //   y: visible ? 0 : -100,
-        // }}
-        // transition={{
-        //   duration: 0.6,
-        // }}
-        className="hidden sm:flex max-md:px-4 max-w-screen-2xl bg-white z-50 backdrop-blur-lg h-16 w-full justify-center items-center"
-      >
+      <div className="hidden sm:flex max-md:px-4 max-w-screen-2xl bg-white z-50 backdrop-blur-lg h-16 w-full justify-center items-center">
         <div className="flex justify-between max-w-screen-xl items-center h-full w-full">
           <div className="relative flex-[0.8] h-6">
             <Image

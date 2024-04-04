@@ -6,7 +6,7 @@ import SocialButton from './social-button'
 
 const Footer = () => {
   return (
-    <div className="h-screen overflow-clip bg-black text-white w-full">
+    <div className="h-screen overflow-hidden bg-black text-white w-full">
       <div className="h-full mx-auto max-w-screen-xl">
         <div className="h-3/5 border-b flex flex-col gap-12 justify-center  border-gray-600">
           {/* <div className="text-7xl">

@@ -1,9 +1,7 @@
 import React from 'react'
 import CTAButton from './cta'
 
-type Props = {}
-
-const HeroSection = (props: Props) => {
+const HeroSection = () => {
   return (
     <div className="md:h-screen max-md:pb-40 px-16 relative mx-auto flex flex-col pt-40 items-center ">
       <div>

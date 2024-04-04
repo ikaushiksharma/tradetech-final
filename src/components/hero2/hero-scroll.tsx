@@ -1,6 +1,6 @@
 'use client'
 import React, { useRef } from 'react'
-import { useScroll, useTransform, motion, MotionValue } from 'framer-motion'
+import { useScroll, useTransform, motion } from 'framer-motion'
 import Image from 'next/image'
 import { TypewriterEffect } from './typewritter-effect'
 
@@ -11,21 +11,22 @@ export const HeroContainerScroll: React.FC<HeroContainerScrollProps> = ({}) => {
   const { scrollYProgress } = useScroll({
     target: containerRef,
   })
-  const [isMobile, setIsMobile] = React.useState(false)
+  // const [isMobile, setIsMobile] = React.useState(false)
 
-  React.useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
-    checkMobile()
-    window.addEventListener('resize', checkMobile)
-    return () => {
-      window.removeEventListener('resize', checkMobile)
-    }
-  }, [])
+  // React.useEffect(() => {
+  //   const checkMobile = () => {
+  //     setIsMobile(window.innerWidth <= 768)
+  //   }
+  //   checkMobile()
+  //   window.addEventListener('resize', checkMobile)
+  //   return () => {
+  //     window.removeEventListener('resize', checkMobile)
+  //   }
+  // }, [])
 
   const scaleDimensions = () => {
-    return isMobile ? [0.7, 0.9] : [1.05, 1]
+    // return isMobile ? [0.7, 0.9] : [1.05, 1]
+    return [1.05, 1]
   }
 
   const rotate = useTransform(scrollYProgress, [0, 1], [20, 0])
@@ -49,7 +50,7 @@ export const HeroContainerScroll: React.FC<HeroContainerScrollProps> = ({}) => {
           className="max-w-5xl relative mx-auto text-center"
         >
           <div className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  inline-block">
-            <span className="absolute inset-0 overflow-hidden rounded-full">
+            <span className="absolute inset-0 rounded-full">
               <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
             </span>
             <div className="relative flex space-x-2 items-center z-10 rounded-full bg-background py-0.5 px-4 ring-1 ring-white/10 ">
@@ -70,13 +71,13 @@ export const HeroContainerScroll: React.FC<HeroContainerScrollProps> = ({}) => {
                 ></path>
               </svg>
             </div>
-            <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-primary/0 via-primary/90 to-primary/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+            {/* <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-primary/0 via-primary/90 to-primary/0 transition-opacity duration-500 group-hover:opacity-40"></span> */}
           </div>
           <div className="text-center font-medium mt-4 z-[100]">
             <TypewriterEffect />
           </div>
           <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-            <h1 className="text-7xl max-md:whitespace-nowrap font-bold text-center md:text-9xl z-[100]">
+            <h1 className="text-7xl whitespace-nowrap font-bold text-center md:text-9xl z-[100]">
               TradeTech
             </h1>
           </div>

@@ -38,7 +38,7 @@ const SubSection2 = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2 text-xl">
               <Tick />
-              Control over your{' '}
+              Control over your
               <span className="font-semibold">outreach message</span>
             </div>
             <div className="ml-6 text-sm">
@@ -47,7 +47,6 @@ const SubSection2 = () => {
           </div>
         </div>
         <div>
-          {' '}
           <CTAButton>Get Started</CTAButton>
         </div>
       </div>

@@ -1,9 +1,7 @@
 import { useScroll } from 'framer-motion'
 import React, { useRef } from 'react'
 import StepCard from './step-card'
-import { TextGenerateEffect } from '../ui/text-generate-effect'
 import MiniHeading from '../common/mini-heading'
-import { Spotlight } from './spotlight'
 const projects = [
   {
     title: 'Provide all your data',
@@ -44,9 +42,6 @@ const StepSection = () => {
         </p>
       </div>
       <div className="relative md:w-1/2 flex flex-col justify-center ml-auto">
-        {/* <div className="">
-          <TextGenerateEffect className="text-white" words={words} />
-        </div> */}
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05
           return (

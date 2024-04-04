@@ -11,9 +11,8 @@ import Card3 from '@/assets/card3.svg'
 import Card4 from '@/assets/card4.svg'
 import Tick from '../common/tick'
 import { cn } from '@/lib/utils'
-type Props = {}
 
-const SubSection3 = (props: Props) => {
+const SubSection3 = () => {
   const [mounted, setMounted] = useState(false)
   useGSAP(() => {
     setMounted(true)
@@ -24,7 +23,6 @@ const SubSection3 = (props: Props) => {
         start: 'top top',
         scrub: 0.5,
         end: '500% 200%',
-        // markers: true,
         pin: true,
       },
     })
@@ -57,7 +55,6 @@ const SubSection3 = (props: Props) => {
         },
         'end'
       )
-      // add a duration
       .add('transit', '-=0.5')
       .to('.image3', { display: 'block' }, 'transit')
       .to('.image3_mobile', { display: 'block' }, 'transit')
@@ -87,7 +84,7 @@ const SubSection3 = (props: Props) => {
     }
   })
   return (
-    <div className="w-full container3 relative px-16 flex items-center justify-center h-screen">
+    <div className="w-full max-md:overflow-hidden container3 relative px-16 flex items-center justify-center h-screen">
       <div className="heading opacity-0 scale-0">
         <MiniHeading text="Elevate" />
         <h1 className="md:text-7xl text-5xl max-w-xl uppercase tracking-wider text-center">

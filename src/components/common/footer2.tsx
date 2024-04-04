@@ -55,7 +55,7 @@ const Footer2 = () => {
             </div>
           </div>
         </div>
-        <div className="absolute flex-1 bottom-0 w-full h-1/3">
+        <div className="absolute overflow-clip flex-1 bottom-0 w-full h-1/3">
           <div className="text-white max-md:text-sm z-10 isolate relative top-1/2 px-8 md:px-16 md:flex justify-between">
             <div className="md:flex max-md:space-y-2 gap-8">
               <p>Terms & Conditions</p>
@@ -64,7 +64,7 @@ const Footer2 = () => {
             </div>
             <div>&copy; 2024 TradeTech. All rights reserved</div>
           </div>
-          <div className="text-9xl md:text-[18rem] absolute w-full translate-y-20 md:-translate-y-10 text-neutral-900 text-center">
+          <div className="text-9xl md:text-[18rem] overflow-clip absolute w-full translate-y-10 text-neutral-900 text-center">
             TradeTech
           </div>
         </div>

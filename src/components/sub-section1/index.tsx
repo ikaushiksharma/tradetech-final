@@ -1,13 +1,11 @@
 'use client'
-import React, { useLayoutEffect } from 'react'
+import React, { useEffect } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
-
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import MiniHeading from '../common/mini-heading'
-type Props = {}
 
-const SubSection1 = (props: Props) => {
+const SubSection1 = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger)
     const tl = gsap.timeline({
@@ -16,7 +14,6 @@ const SubSection1 = (props: Props) => {
         start: 'top top',
         end: '200% bottom',
         scrub: true,
-        // markers: true,
         pin: true,
       },
     })
@@ -42,22 +39,22 @@ const SubSection1 = (props: Props) => {
           <source src="coin1.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex w-16 md:w-32 items-center justify-center absolute left-40 top-12 md:top-56 z-[-1]">
+      <div className="flex w-12 md:w-32 items-center justify-center absolute left-40 top-20 md:top-56 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin2.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex w-16 md:w-32 items-center justify-center absolute right-2 md:right-40 bottom-24 md:bottom-56 z-[-1]">
+      <div className="flex w-12 md:w-32 items-center justify-center absolute right-2 md:right-40 bottom-24 md:bottom-56 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin3.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex w-16 md:w-32 items-center justify-center  absolute top-40 right-2 md:right-56 z-[-1]">
+      <div className="flex w-12 md:w-32 items-center justify-center  absolute top-40 right-2 md:right-56 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin4.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex w-16 md:w-32 items-center justify-center  absolute bottom-40 left-4 md:left-56 z-[-1]">
+      <div className="flex w-12 md:w-32 items-center justify-center  absolute bottom-40 left-4 md:left-56 z-[-1]">
         <video className="w-full" muted loop playsInline autoPlay>
           <source src="coin5.mp4" type="video/mp4" />
         </video>
