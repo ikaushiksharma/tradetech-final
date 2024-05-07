@@ -7,6 +7,7 @@ import SubSection2 from '@/components/sub-section2'
 import SubSection3 from '@/components/sub-section3'
 import { useEffect } from 'react'
 import Lenis from '@studio-freight/lenis'
+import TeamsSection from '@/components/teams-section'
 
 export default function Home() {
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function Home() {
       <SubSection3 />
       <FeaturesSection2 />
       <StepSection />
+      <TeamsSection />
     </>
   )
 }
