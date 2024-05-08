@@ -10,7 +10,9 @@ const TeamsSection = () => {
       </div>
       <div className="w-full grid gap-2 grid-cols-6">
         <div className="col-span-6 px-4 flex items-center md:col-span-3 lg:col-span-2 aspect-[9/10]">
-          <p className="w-3/4 text-2xl sm:text-3xl md:text-4xl">Meet our visionaries</p>
+          <p className="w-3/4 text-2xl sm:text-3xl md:text-4xl">
+            Meet our visionaries
+          </p>
         </div>
         {Array.from({ length: 5 }).map((_, index) => (
           <div
@@ -18,9 +20,9 @@ const TeamsSection = () => {
             className="col-span-6 md:col-span-3 lg:col-span-2 aspect-[9/10]"
           >
             <UserCard
-              image="/assets/user.jpg"
-              name="lorem"
-              desg="ipsum"
+              image="/assets/user.webp"
+              name="Ritesh Kumar"
+              desg="Web Developer"
               link="https://www.google.com"
             />
           </div>
