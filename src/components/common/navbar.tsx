@@ -7,7 +7,7 @@ import MobileNav from './mobile-nav'
 const Navbar = () => {
   return (
     <>
-      <div className="hidden sm:flex max-md:px-4 max-w-screen-2xl bg-white z-50 backdrop-blur-lg h-16 w-full justify-center items-center">
+      <div className="hidden sm:flex max-md:px-4 max-w-screen-2xl bg-slate-100 border-b border-white z-50 backdrop-blur-lg h-20 w-full justify-center items-center">
         <div className="flex justify-between max-w-screen-xl items-center h-full w-full">
           <div className="relative flex-[0.8] h-6">
             <Image
@@ -17,7 +17,7 @@ const Navbar = () => {
               className="invert object-contain object-left-top"
             />
           </div>
-          <ul className="flex py-2 text-xs flex-[1] flex-grow justify-evenly">
+          <ul className="flex py-2 text-base flex-[1] flex-grow justify-evenly">
             <li className="cursor-pointer hover:text-gray-500">Home</li>
             <li className="cursor-pointer hover:text-gray-500">About</li>
             <li className="cursor-pointer hover:text-gray-500">Blog</li>

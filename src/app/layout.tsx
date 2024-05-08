@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${myFont.className} select-none max-w-screen-2xl selection:text-white selection:bg-[#7E30E1] w-full mx-auto`}
       >
-        <Preloader />
+        {/* <Preloader /> */}
         <Navbar />
         <HeroSection2 />
         {children}

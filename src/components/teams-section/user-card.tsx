@@ -12,7 +12,7 @@ const UserCard = ({ image, name, desg, link }: ICardProps) => {
   return (
     <div className="w-full relative h-full">
       <div className="h-4/5 relative">
-        <Image src={image} objectFit="cover" fill alt={name} />
+        <Image src={image} className="object-cover" fill alt={name} />
       </div>
       <div className="h-1/5 flex justify-center px-4 py-1 flex-col w-full bg-gray-200">
         <p className="text-black sm:text-lg md:text-2xl">{name}</p>

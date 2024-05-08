@@ -4,7 +4,7 @@ import Robo2 from './robo-2'
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen h-screen mb-12 px-8 md:px-16 mx-auto flex flex-col">
+    <div className="max-md:min-h-screen h-full max-md:h-screen my-12 px-8 md:px-16 mx-auto flex flex-col">
       <div className="h-1/2 w-full">
         <h1 className="md:text-5xl text-3xl mx-auto max-w-2xl uppercase text-center">
           Meet your AI Sales Copilot
