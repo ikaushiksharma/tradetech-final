@@ -10,19 +10,19 @@ const CTAButton = ({ children, dark = false, arrow = false }: Props) => {
   return (
     <button
       className={cn([
-        'py-3 px-6 whitespace-nowrap  rounded-full',
+        'py-4 px-6 whitespace-nowrap text-xl  rounded-full',
         dark
           ? 'bg-[#220a33] text-white'
           : 'bg-white text-slate-800 border border-gray-500',
-        arrow ? 'flex justify-between items-center py-2 gap-2 px-2 pl-5' : '',
+        arrow ? 'flex justify-between items-center py-3 gap-2 px-3 pl-6' : '',
       ])}
     >
       {children}
       {arrow && (
-        <div className="bg-white flex justify-center items-center rounded-full size-8">
+        <div className="bg-white flex justify-center items-center rounded-full ml-4 size-10">
           <svg
-            width="18"
-            height="18"
+            width="20"
+            height="20"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"

@@ -10,25 +10,25 @@ type Props = {}
 
 const HeroSection2 = (props: Props) => {
   return (
-    <section className="w-full min-h-screen bg-slate-100 max-md:px-4 pb-12 h-[120dvh] md:h-[calc(100vh-5rem)] relative">
+    <section className="w-full min-h-screen max-md:px-4 pb-12 h-[120dvh] md:h-[calc(100vh-5rem)] relative">
       <div className="mx-auto relative w-full h-full max-w-screen-xl md:px-20">
         {/* <HeroContainerScroll /> */}
-        <div className="flex max-md:flex-col max-md:space-y-12 items-center w-full h-full justify-between relative pt-12">
-          <div className="h-2/5 max-md:w-full md:h-full w-1/2">
+        <div className="flex max-md:flex-col max-md:space-y-12 items-center w-full h-full justify-between relative">
+          <div className="h-2/5 max-md:w-full md:h-full w-1/2 pt-[20vh]">
             {/* <Comp /> */}
-            <h1 className="text-5xl md:text-8xl first-line:text-black text-left font-bold text-gray-400">
-              Your AI Sales <span className="text-black">Copilot</span>
+            <h1 className="text-5xl md:text-7xl first-line:text-black text-left font-bold text-gray-400">
+              Your AI Sales <span className="text-gray-400">Copilot</span>
             </h1>
             <div className="flex-1  space-y-6 pt-12">
               <div className="space-y-4">
-                <div className="flex items-center gap-2 text-xl">
+                <div className="flex items-center gap-3 text-md">
                   <Tick />
                   Always Available,{' '}
                   <span className="font-semibold">Always Ready</span>
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="flex items-center gap-2 text-xl">
+                <div className="flex items-center gap-3 text-md">
                   <Tick />
                   Engage with new leads{' '}
                   <span className="font-semibold">within 5 mins.</span>
@@ -36,14 +36,14 @@ const HeroSection2 = (props: Props) => {
               </div>
               <div>
                 <div className="space-y-4">
-                  <div className="flex items-center gap-2 text-xl">
+                  <div className="flex items-center gap-3 text-md">
                     <Tick />
                     Control over your
                     <span className="font-semibold">outreach message</span>
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="pt-4">
                 <CTAButton dark arrow>
                   Get Started
                 </CTAButton>

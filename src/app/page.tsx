@@ -24,7 +24,7 @@ export default function Home() {
   }, [])
   return (
     <>
-        <HeroSection />
+      <HeroSection />
       <SubSection1 />
       {/* <SubSection2 /> */}
       <SubSection3 />
