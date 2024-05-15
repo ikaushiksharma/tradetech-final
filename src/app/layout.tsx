@@ -31,7 +31,7 @@ export default function RootLayout({
         <Navbar />
         {/* <HeroSection2 /> */}
         <HeroPage />
-        {/* {children} */}
+        {children}
         <Footer1 />
         <Footer2 />
       </body>
