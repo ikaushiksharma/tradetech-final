@@ -8,6 +8,7 @@ import Footer2 from '@/components/common/footer2'
 import HeroSection2 from '@/components/hero2'
 import Preloader from '@/components/common/preloader'
 import Loader from '@/components/common/loader'
+import HeroPage from '@/components/hero-page'
 
 const myFont = localFont({ src: '../assets/VioletSans-Regular.woff2' })
 
@@ -26,10 +27,11 @@ export default function RootLayout({
       <body
         className={`${myFont.className} select-none max-w-screen-2xl selection:text-white selection:bg-[#7E30E1] w-full mx-auto`}
       >
-        {/* <Preloader /> */}
+        <Preloader />
         <Navbar />
-        <HeroSection2 />
-        {children}
+        {/* <HeroSection2 /> */}
+        <HeroPage />
+        {/* {children} */}
         <Footer1 />
         <Footer2 />
       </body>

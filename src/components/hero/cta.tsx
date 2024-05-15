@@ -4,6 +4,7 @@ type Props = {
   children: React.ReactNode
   dark?: boolean
   arrow?: boolean
+  purple?:boolean
 }
 
 const CTAButton = ({ children, dark = false, arrow = false }: Props) => {
